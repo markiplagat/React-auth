@@ -1,18 +1,20 @@
 import React from 'react';
+import {Link } from 'react-router-dom';
 class Nav extends React.Component{
     render(){
         return(
      <nav className="navbar navbar-expand navbar-light fixed-top">
         <div className="container">
-          <a href="" className="navbar-brand">Home</a>
+           <Link to ={'/'} className="nav-link">Home</Link>
           <div className="collapse navbar-collapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a href=""className="nav-link">Login</a>
                 </li>
                 <li className="nav-item">
-                  <a href=""className="nav-link">Sign Up</a>
-
+                  <Link to ={'/Login'} className="nav-link">Login</Link>
+                </li>
+                <li className="nav-item">
+                   <Link to ={'/Register'} className="nav-link">Sign Up</Link>
                 </li>
 
               </ul>

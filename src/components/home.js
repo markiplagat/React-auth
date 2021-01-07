@@ -4,7 +4,7 @@ class Home extends React.Component {
 
     render(){
         return(
-            <h2>You are not logged in</h2> 
+            <h2>Welcome To Mafa Company.</h2> 
         );
     }
 }
